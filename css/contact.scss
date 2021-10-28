@@ -1,0 +1,390 @@
+$highlight: #ec1c24;
+$dark: #212d31;
+$text: #343a40;
+$background: #eee;
+
+@mixin media-xl {
+  @media screen and (max-width: 1300px) {
+    @content;
+  }
+}
+
+@mixin media-lg {
+  @media screen and (max-width: 1140px) {
+    @content;
+  }
+}
+@mixin media-md {
+  @media screen and (max-width: 600px) {
+    @content;
+  }
+}
+
+@mixin media-sm {
+  @media screen and (max-width: 350px) {
+    @content;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  max-width: 1500px;
+  background-color: $background;
+  height: 100vh;
+  width: 100vw;
+  //   padding: 30px 0px;
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .headers {
+    width: 90%;
+    margin: 0px auto;
+
+    h2 {
+      color: $text;
+      font-size: 28px;
+      font-weight: 500;
+    }
+    h1 {
+      font-size: 50px;
+      padding: 5px 0px;
+      font-weight: 600;
+    }
+
+    p {
+      border-top: 7px solid $highlight;
+      width: 90px;
+      border-radius: 10px;
+    }
+  }
+
+  .main {
+    margin: 30px auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+
+    .form {
+      width: 70%;
+      height: auto;
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+
+      p {
+        height: 10px;
+        color: $highlight;
+        margin-bottom: 5px;
+      }
+
+      .name-mail {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+
+        input {
+          width: 49%;
+          outline: none;
+        }
+      }
+      input {
+        width: 100%;
+        margin: 10px 0px;
+        padding: 12px 0px;
+        font-size: 24px;
+        text-indent: 20px;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+
+        &:hover {
+          box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25),
+            inset 4px 4px 4px rgba(0, 0, 0, 0.1);
+        }
+      }
+      textarea {
+        width: 100%;
+        margin: 10px 0px;
+        padding: 12px 0px;
+        font-size: 24px;
+        text-indent: 20px;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+
+        &:hover {
+          box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25),
+            inset 4px 4px 4px rgba(0, 0, 0, 0.1);
+        }
+      }
+      .check-box {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+
+        input {
+          width: fit-content;
+          box-shadow: none;
+          margin-right: 10px;
+        }
+
+        p {
+          color: $dark;
+          font-weight: 500;
+          height: fit-content;
+        }
+      }
+      .buttons {
+        margin-top: 5px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        button {
+          padding: 8px 30px;
+          font-size: 22px;
+          color: $highlight;
+          border-radius: 30px;
+          border: 2px solid $highlight;
+          cursor: pointer;
+          transition: all 0.5s ease-in-out;
+
+          &:hover {
+            background-color: $highlight;
+            color: $background;
+          }
+        }
+      }
+    }
+
+    .info {
+      width: 28%;
+      height: auto;
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+
+      p {
+        width: 100%;
+        font-size: 20px;
+
+        strong {
+          font-weight: 600;
+        }
+      }
+
+      .box {
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+
+        i {
+          font-size: 30px;
+          color: $dark;
+          margin-right: 12px;
+        }
+        p {
+          font-size: 34px;
+          font-weight: 500;
+        }
+        span {
+          color: $highlight;
+          font-size: 36px;
+          font-weight: 500;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+      }
+    }
+  }
+}
+
+@include media-xl {
+  body {
+    .main {
+      .info {
+        .box {
+          i {
+            font-size: 28px;
+          }
+          p {
+            font-size: 30px;
+          }
+          span {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+@include media-lg {
+  body {
+    height: fit-content;
+
+    .headers {
+      width: 80%;
+    }
+    .main {
+      width: 80%;
+      flex-direction: column;
+
+      .form {
+        width: 100%;
+
+        .check-box {
+          height: fit-content;
+          margin-bottom: 15px;
+
+          input {
+            margin-right: 10px;
+          }
+        }
+      }
+
+      .info {
+        width: 100%;
+        margin-top: 20px;
+        p {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}
+
+@include media-md {
+  body {
+    .headers {
+      h2 {
+        font-size: 22px;
+      }
+      h1 {
+        font-size: 35px;
+      }
+
+      p {
+        border-top: 5px solid $highlight;
+        width: 70px;
+      }
+    }
+    .main {
+      .form {
+        input {
+          font-size: 20px;
+        }
+
+        .name-mail {
+          flex-direction: column;
+
+          input {
+            width: 100%;
+          }
+        }
+        textarea {
+          font-size: 20px;
+        }
+        .buttons {
+          button {
+            font-size: 18px;
+            padding: 7px 24px;
+          }
+        }
+      }
+      .info {
+        p {
+          font-size: 18px;
+        }
+        .box {
+          i {
+            font-size: 22px;
+          }
+          p {
+            font-size: 24px;
+          }
+          span {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+}
+@include media-sm {
+  body {
+    .headers {
+      width: 85%;
+      h2 {
+        font-size: 18px;
+      }
+      h1 {
+        font-size: 28px;
+      }
+
+      p {
+        border-top: 5px solid $highlight;
+        width: 70px;
+      }
+    }
+    .main {
+      width: 85%;
+      .form {
+        input {
+          font-size: 20px;
+        }
+
+        .name-mail {
+          flex-direction: column;
+
+          input {
+            width: 100%;
+          }
+        }
+        textarea {
+          font-size: 20px;
+        }
+        .buttons {
+          button {
+            font-size: 18px;
+            padding: 7px 24px;
+          }
+        }
+      }
+      .info {
+        p {
+          font-size: 18px;
+        }
+        .box {
+          i {
+            font-size: 22px;
+          }
+          p {
+            font-size: 24px;
+          }
+          span {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+}

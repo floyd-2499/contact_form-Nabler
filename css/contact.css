@@ -1,0 +1,418 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 1500px;
+  background-color: #eee;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Raleway", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .headers {
+  width: 90%;
+  margin: 0px auto;
+}
+
+body .headers h2 {
+  color: #343a40;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+body .headers h1 {
+  font-size: 50px;
+  padding: 5px 0px;
+  font-weight: 600;
+}
+
+body .headers p {
+  border-top: 7px solid #ec1c24;
+  width: 90px;
+  border-radius: 10px;
+}
+
+body .main {
+  margin: 30px auto;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body .main .form {
+  width: 70%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .main .form p {
+  height: 10px;
+  color: #ec1c24;
+  margin-bottom: 5px;
+}
+
+body .main .form .name-mail {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body .main .form .name-mail input {
+  width: 49%;
+  outline: none;
+}
+
+body .main .form input {
+  width: 100%;
+  margin: 10px 0px;
+  padding: 12px 0px;
+  font-size: 24px;
+  text-indent: 20px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+body .main .form input:hover {
+  -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25), inset 4px 4px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25), inset 4px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+body .main .form textarea {
+  width: 100%;
+  margin: 10px 0px;
+  padding: 12px 0px;
+  font-size: 24px;
+  text-indent: 20px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+body .main .form textarea:hover {
+  -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25), inset 4px 4px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25), inset 4px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+body .main .form .check-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body .main .form .check-box input {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin-right: 10px;
+}
+
+body .main .form .check-box p {
+  color: #212d31;
+  font-weight: 500;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+body .main .form .buttons {
+  margin-top: 5px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body .main .form .buttons button {
+  padding: 8px 30px;
+  font-size: 22px;
+  color: #ec1c24;
+  border-radius: 30px;
+  border: 2px solid #ec1c24;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+body .main .form .buttons button:hover {
+  background-color: #ec1c24;
+  color: #eee;
+}
+
+body .main .info {
+  width: 28%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .main .info p {
+  width: 100%;
+  font-size: 20px;
+}
+
+body .main .info p strong {
+  font-weight: 600;
+}
+
+body .main .info .box {
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body .main .info .box i {
+  font-size: 30px;
+  color: #212d31;
+  margin-right: 12px;
+}
+
+body .main .info .box p {
+  font-size: 34px;
+  font-weight: 500;
+}
+
+body .main .info .box span {
+  color: #ec1c24;
+  font-size: 36px;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 1300px) {
+  body .main .info .box i {
+    font-size: 28px;
+  }
+  body .main .info .box p {
+    font-size: 30px;
+  }
+  body .main .info .box span {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  body {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  body .headers {
+    width: 80%;
+  }
+  body .main {
+    width: 80%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .main .form {
+    width: 100%;
+  }
+  body .main .form .check-box {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-bottom: 15px;
+  }
+  body .main .form .check-box input {
+    margin-right: 10px;
+  }
+  body .main .info {
+    width: 100%;
+    margin-top: 20px;
+  }
+  body .main .info p {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body .headers h2 {
+    font-size: 22px;
+  }
+  body .headers h1 {
+    font-size: 35px;
+  }
+  body .headers p {
+    border-top: 5px solid #ec1c24;
+    width: 70px;
+  }
+  body .main .form input {
+    font-size: 20px;
+  }
+  body .main .form .name-mail {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .main .form .name-mail input {
+    width: 100%;
+  }
+  body .main .form textarea {
+    font-size: 20px;
+  }
+  body .main .form .buttons button {
+    font-size: 18px;
+    padding: 7px 24px;
+  }
+  body .main .info p {
+    font-size: 18px;
+  }
+  body .main .info .box i {
+    font-size: 22px;
+  }
+  body .main .info .box p {
+    font-size: 24px;
+  }
+  body .main .info .box span {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  body .headers {
+    width: 85%;
+  }
+  body .headers h2 {
+    font-size: 18px;
+  }
+  body .headers h1 {
+    font-size: 28px;
+  }
+  body .headers p {
+    border-top: 5px solid #ec1c24;
+    width: 70px;
+  }
+  body .main {
+    width: 85%;
+  }
+  body .main .form input {
+    font-size: 20px;
+  }
+  body .main .form .name-mail {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .main .form .name-mail input {
+    width: 100%;
+  }
+  body .main .form textarea {
+    font-size: 20px;
+  }
+  body .main .form .buttons button {
+    font-size: 18px;
+    padding: 7px 24px;
+  }
+  body .main .info p {
+    font-size: 18px;
+  }
+  body .main .info .box i {
+    font-size: 22px;
+  }
+  body .main .info .box p {
+    font-size: 24px;
+  }
+  body .main .info .box span {
+    font-size: 24px;
+  }
+}
